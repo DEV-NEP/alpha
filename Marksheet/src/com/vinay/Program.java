@@ -32,7 +32,6 @@ public class Program {
             Compare cmp = new Compare();
             cmp.comp(a, b);
             System.out.println("\nDo you want to enter next data?[Y/N]");
-            //ch = in.next();
             if (in.next().equalsIgnoreCase("n")) {
                 System.exit(0);
             }
