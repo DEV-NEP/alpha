@@ -18,13 +18,13 @@ public class Program {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String a, ch;
+        String a;
         int b;
         Scanner in = new Scanner(System.in);
 
         while (true) {
             System.out.println("Enter your Name: ");
-            a = in.nextLine();
+            a = in.next();
             
             System.out.println("Enter your Symbol No.: ");
             b = in.nextInt();
@@ -32,8 +32,8 @@ public class Program {
             Compare cmp = new Compare();
             cmp.comp(a, b);
             System.out.println("\nDo you want to enter next data?[Y/N]");
-            ch = in.next();
-            if (ch.equalsIgnoreCase("n")) {
+            //ch = in.next();
+            if (in.next().equalsIgnoreCase("n")) {
                 System.exit(0);
             }
 
