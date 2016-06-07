@@ -19,20 +19,20 @@ int age;
    public void setaddr(String y){
      address=y;  
    }
-   /*public String getaddr(){
+   public String getaddr(){
        return address;
-   }*/
+   }
      
     public static void main(String[] arg) {
-        Alpha name = new Alpha("Vinay");
+        Alpha name = new Alpha("Vinay KC");
         name.getage( );
-        name.setaddr("Sanepa");
+        name.setaddr("Sanepa, Kathmandu");
        // name.getaddr();
                 
         
       System.out.println("My name is " + name.name);
       System.out.println("My age is " + name.age);
-      System.out.println("I am from " + name.address);
+      System.out.println("I am from " + name.getaddr());
       System.out.println("And I am a Computer Engineering student at ACEM ");
     }
     
